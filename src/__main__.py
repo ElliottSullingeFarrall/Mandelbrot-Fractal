@@ -12,7 +12,7 @@ def is_bounded(c):
     f = func(c)
 
     z = 0
-    for i in range(N_MAX):
+    for _ in range(N_MAX):
         z = f(z)
         if abs(z) > TOL:
             return False
